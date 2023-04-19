@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:hsl(35, 54%, 93%);
+    position: relative;
+}
+
+
+main{
+    border-top: 0.8px solid black;
+    margin: 20px 0px;
+}
+
+header{
+    background-color: hsl(36, 81%, 88%);
+}
+
+
+:root{
+    --bgColorLight: rgba(255, 255, 255, 0.5);
+    --bgColorBody: hsl(35, 54%, 93%);
+}
+
+
+/*------------------------------ FONTS -------------------------------------------------------------------*/
+
+/* header title, section title */
+h1{
+    font-weight: bolder;
+}
+
+/* section X article title */
+h2{
+    margin: 20px 0px;
+}
+
+/* section X article Text*/
+
+p{
+    margin: 0px 10px;
+}
+
+a{
+    color: black;
+    
+}
+
+
+
+/*------------------------------------ HEADER SECTION -------------------------------------*/
+
+
+
+.headerContainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./pictures/headerImg.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+
+}
+
+.headerWrapper{
+    display: flex;
+    height: 100px;
+    background-color: var(--bgColorLight);
+    border-bottom: 2px solid white;
+}
+
+
+.headerTitle{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNavigation{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.headerTable{
+    display: flex;
+}
+
+.headerTable li {
+    margin: 10px 20px;
+    text-decoration: none;
+    display:inline-block;
+}
+.headerTable li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*------------------------------------ MAIN SECTION -------------------------------------*/
+
+
+.mainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 100px;
+    position: relative;
+}
+
+
+.sectionTitleContainer h1{
+    border-bottom: 0.8px solid black;
+}
+
+
+
+.sectionTitleContainer i{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.sectionTitleContainer i:hover{
+    font-size: 1.6rem;
+    transition: 0.4s ease;
+}
+
+main{
+   position: relative;
+}
+
+.mainContent{
+    display: flex;
+    width: 100vw;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    padding: 10px;
+    box-shadow: 1px 1px 5px grey;
+    position: absolute;
+    top: 100px;
+    justify-content: center;
+}
+
+.mainContent div{
+    margin: 50px 4px 30px 0px;
+   /* border: 2px solid purple;*/
+    width: 50vw;
+    height: 70vh;
+}
+
+#about{
+    height: 100vh;
+}
+
+#aboutImg{
+    width: 400px;
+    height: 70vh;
+   
+}
+
+#aboutImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+
+
+#mainContentText{
+    padding: 10px;
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-bottom: 0.5px solid grey;
+    margin: 30px 4px 4px 20px;
+    overflow: scroll;
+}
+
+#mainContentText h2{
+    border-bottom: 1px solid grey;
+}
+
+#mainContentText p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 35px;
+
+}
+
+
+
+
+
+
+
+/* ------------------------------- #2: VORSORGE -------------------------------------------- */
+
+#prenatalCare{
+    padding: 20px;
+}
+
+.gridWrapper{
+    background-color: var(--bgColorLight);
+    width: 100vw;
+    box-shadow: 1px 1px 5px grey;
+    height: 80vh;
+    display: flex;
+}
+
+.mainGrid{
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "one two four three ";
+                        
+
+}
+
+.firstGridItem{
+    grid-area: one;
+
+}
+.secondGridItem{
+    grid-area: two;
+}
+.thirdGridItem{
+    grid-area: three;
+}
+.fourthGridItem{
+    grid-area: four;
+}
+
+
+
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+.circle{
+    background-color: var(--bgColorLight);
+   border-top: 2px solid grey;
+    border-bottom: 5px solid grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.gridItem p{
+    margin: 20px 10px;
+}
+
+
+/* ------------------------------- #3 GEBURTSVORBEREITUNG -------------------------------------------- */
+
+
+#birthPreparation{
+  /* border: 10px solid cadetblue;*/
+}
+
+
+
+.sectionWrapper{
+    width: 100vw;
+    height: 90%;
+    /*border: 2px solid gold;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.leftbirthText, .rightbirthText{
+    position: absolute;
+    width: 30vw;
+    text-align: center;
+    height: 80%;
+    background-color: var(--bgColorLight);
+    box-shadow: 0px 0px 10px grey;
+    overflow: scroll;
+}
+
+.leftbirthText{
+    left: 30px;
+}
+
+.rightbirthText{
+    right: 30px;
+}
+
+.leftbirthText h1{
+    margin: 20px;
+}
+
+.leftbirthText p{
+    margin: 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+.rightbirthText h1{
+    margin: 20px;
+}
+
+.rightbirthText p{
+    margin: 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+
+
+.birthImg{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.birthImg img{
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 0px 10px grey;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------- #4 GEBURTSNACHBEREITUNG -------------------------------------------- */
+
+
+#postnatalCare{
+   /* border: 10px solid gold;*/
+
+}
+.postnatalWrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.postnatalImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+.postnatalImg img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+
+.postnatalInformations{
+    position: absolute;
+    width: 30vw;
+    height: 90%;
+    top: 20px;
+    right: 200px;
+    text-align: center;
+    background-color: var(--bgColorBody);
+    opacity: 0.2;
+    /*background-color: hsla(0, 59%, 81%, 0.1);*/
+    padding: 20px;
+    margin: 10px;
+   box-shadow: 0px 0px 5px grey;
+    
+}
