@@ -10,6 +10,7 @@
 body{
     background-color:hsl(35, 54%, 93%);
     position: relative;
+    width: 50vw;
 }
 
 
@@ -21,6 +22,7 @@ main{
 
 header{
     background-color: hsl(36, 81%, 88%);
+    width: 100vw;
 }
 
 
@@ -67,6 +69,7 @@ a{
     background-size: cover;
     opacity: 0.7;
     display: flex;
+   
 }
 
 .headerWrapper{
@@ -974,7 +977,7 @@ main{
 
     .contactContainer{
         height: 250vh;
-        border: 2px solid black;
+        
     }
 
     .contactLinks{
