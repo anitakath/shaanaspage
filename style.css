@@ -437,14 +437,7 @@ main{
                              "three four";
     }
 
-    /*
-    .gridItem{
-        border: 2px solid green;
-    }
-
-    .circle{
-        border: 2px solid blue;
-    }*/
+   
 }
 
 @media(max-width: 700px){
@@ -613,8 +606,6 @@ main{
     height: 100%;
     width: 100%;
     position: relative;
-
-    
 }
 
 .postnatalImg img{
@@ -622,25 +613,41 @@ main{
     height: 100%;
     background-size: cover;
     opacity: 0.5;
-
 }
 
 .postnatalInformations{
     position: absolute;
-    width: 30vw;
+    width: 40vw;
     height: 90%;
     top: 20px;
-    right: 200px;
-    text-align: center;
+    right: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
     opacity: 0.2;
     /*background-color: hsla(0, 59%, 81%, 0.1);*/
     padding: 20px;
     margin: 10px;
+    text-align: center;
+   
    
     
 }
 
 
+
+@media(max-width: 800px){
+   .postnatalInformations p{
+       margin: 20px 10px;
+   }
+}
+
+@media(max-width: 600px){
+    .postnatalInformations{
+        width: 100vw;
+        
+    }
+}
 
 /* ------------------------------- #5 RÜCKBILDUNGSGYMNASTIK -------------------------------------------- */
 
@@ -650,12 +657,19 @@ main{
     border: 2px solid purple;
 }
 
+#rückbildungsgymnastik a{
+    right: 30px;
+}
 
 
+.postNatalInformations{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-
+}
 
 /* ------------------------------- #6 KONTAKT -------------------------------------------- */
 
