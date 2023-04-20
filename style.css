@@ -355,9 +355,9 @@ main{
 }
 
 .gridWrapper{
-    background-color: var(--bgColorLight);
+    
     width: 100vw;
-    box-shadow: 1px 1px 5px grey;
+    
     height: 80vh;
     display: flex;
 }
@@ -574,7 +574,19 @@ main{
 }
 
 @media(max-width: 600px){
-    
+
+   
+
+    .leftbirthText, .rightbirthText{
+        width: 100vw;
+    }
+
+    .birthImg {
+        background-color: transparent;
+    }
+    .birthImg img{
+        width: 100vw;
+    }
 
 }
 
