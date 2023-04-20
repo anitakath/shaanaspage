@@ -14,7 +14,7 @@ body{
 
 
 main{
-    border-top: 0.8px solid black;
+
     margin: 20px 0px;
   
 }
@@ -73,7 +73,7 @@ a{
     display: flex;
     height: 100px;
     background-color: var(--bgColorLight);
-    border-bottom: 2px solid white;
+    border-bottom: 0.5px solid white;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -135,14 +135,10 @@ a{
 
 @media(max-width: 1200px){
 
-    
-
     .headerTable li a{
         font-size: 1rem;
         transition: 0.4s ease;
     }
-
-   
 }
 
 
@@ -194,7 +190,7 @@ a{
 }
 
 
-/*------------------------------------ MAIN SECTION -------------------------------------*/
+/*------------------------------------ MAIN SECTION: ABOUT ME -------------------------------------*/
 
 
 .mainSection{
@@ -373,7 +369,6 @@ main{
     padding: 20px;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
     grid-template-areas: "one two three four";
-                        
 
 }
 
@@ -425,6 +420,46 @@ main{
     margin: 20px 10px;
 }
 
+
+
+
+
+@media(max-width: 1300px){
+
+    .gridWrapper{
+        height: 120vh;
+    }
+
+
+    .mainGrid{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-areas: "one two"
+                             "three four";
+    }
+
+    /*
+    .gridItem{
+        border: 2px solid green;
+    }
+
+    .circle{
+        border: 2px solid blue;
+    }*/
+}
+
+@media(max-width: 700px){
+
+    .gridWrapper{
+        height: 215vh;
+    }
+    .mainGrid{
+        grid-template-columns:1fr;
+        grid-template-areas: "one"
+                             "two"
+                             "three"
+                             "four";
+    }
+}
 
 /* ------------------------------- #3 GEBURTSVORBEREITUNG -------------------------------------------- */
 
