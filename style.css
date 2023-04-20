@@ -259,9 +259,7 @@ main{
 .mainContent{
     display: flex;
     width: 100vw;
-    background-color: hsla(0, 0%, 100%, 0.3);
     padding: 10px;
-    box-shadow: 1px 1px 5px grey;
     position: absolute;
     top: 100px;
     justify-content: center;
@@ -270,9 +268,10 @@ main{
 .mainContent div{
     margin: 50px 4px 30px 0px;
    /* border: 2px solid purple;*/
-    width: 50vw;
+    width: 60vw;
     height: 70vh;
 }
+
 
 #about{
     height: 100vh;
@@ -923,7 +922,6 @@ main{
 
     .contactContainer{
         flex-direction:column-reverse;
-        border: 10px solid cadetblue;
         height: 200vh;
     }
 
