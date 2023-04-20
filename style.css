@@ -16,6 +16,7 @@ body{
 main{
     border-top: 0.8px solid black;
     margin: 20px 0px;
+  
 }
 
 header{
@@ -49,6 +50,7 @@ p{
 
 a{
     color: black;
+    text-decoration: none;
     
 }
 
@@ -113,6 +115,24 @@ a{
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ MEDIA QUERIES HEADER---------------------------------------*/
+
+
 @media(max-width: 1200px){
 
     
@@ -174,7 +194,6 @@ a{
 }
 
 
-
 /*------------------------------------ MAIN SECTION -------------------------------------*/
 
 
@@ -193,22 +212,34 @@ a{
     position: relative;
 }
 
+.sectionTitleContainer h1{
+    height: 50px;
+ 
+}
 
 
 
 .sectionTitleContainer i{
     font-size: 1.5rem;
-    position: absolute;
-    left: 20px;
-    top: 20px;
     cursor: pointer;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    position: relative
 }
+
+.sectionTitleContainer a{
+    position: absolute;
+    right: 50px;
+    top: 23px;
+}
+
+
+
+
+
 
 .sectionTitleContainer i:hover{
     font-size: 1.6rem;
@@ -279,6 +310,36 @@ main{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ MEDIA QUERIES ABOUT ME---------------------------------------*/
+
+
+
+@media(max-width: 900px){
+
+    #about{
+        height: 180vh;
+        background-color: lightpink;
+    }
+
+    .mainContent{
+        flex-direction: column;
+        transition: 0.4s ease;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
 
 
 
@@ -615,3 +676,27 @@ main{
 .contactMessage input:focus{
     outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
