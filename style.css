@@ -321,6 +321,8 @@ main{
 
 
 
+
+
 /*------------------------------------ MEDIA QUERIES ABOUT ME---------------------------------------*/
 
 
@@ -329,7 +331,7 @@ main{
 
     #about{
         height: 180vh;
-        background-color: lightpink;
+
     }
 
     .mainContent{
@@ -337,8 +339,14 @@ main{
         transition: 0.4s ease;
         justify-content: center;
         align-items: center;
-    
     }
+
+
+    #mainContentText{
+        left: 0;
+        width: 100vw;
+    }
+    
 }
 
 
