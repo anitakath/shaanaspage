@@ -151,6 +151,9 @@ a{
         font-size: 1.6rem;
         cursor: pointer;
         transition: 1s ease;
+        position: absolute;
+        left: 10px;
+        top: -13px;
 
     }
 
