@@ -535,6 +535,18 @@ main{
         /*border: 2px solid blue;*/
     }
 
+    #birthPrep{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #birthPrep a{
+        right: 30px;
+    }
+
+
+
 
     .leftbirthText, .rightbirthText{
         height: 100%;
@@ -570,6 +582,7 @@ main{
 
    
 
+
     .leftbirthText, .rightbirthText{
         width: 100vw;
     }
@@ -581,8 +594,17 @@ main{
         width: 100vw;
     }
 
+
+
 }
 
+
+@media(max-width: 500px){
+    #birthPrep a{
+        right: -20px;
+     
+    }
+}
 
 
 
@@ -600,32 +622,29 @@ main{
     height: 100vh;
     width: 100vw;
     position: relative;
-}
-
-.postnatalImg{
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-.postnatalImg img{
-    width: 100%;
-    height: 100%;
+    background-image: url('./pictures/headerImg.jpg');
     background-size: cover;
-    opacity: 0.5;
+    
+   
 }
+
+.postnatalInformationsWrapper{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .postnatalInformations{
-    position: absolute;
-    width: 40vw;
+    width: 100vw;
     height: 90%;
-    top: 20px;
-    right: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
    display: flex;
    flex-direction: column;
-   align-items: center;
-    opacity: 0.2;
-    /*background-color: hsla(0, 59%, 81%, 0.1);*/
+   align-items: center;;
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -647,6 +666,11 @@ main{
         width: 100vw;
         
     }
+
+    .postnatalWrapper{
+       background-position: -200px;
+       transition:1s ease;
+    }
 }
 
 /* ------------------------------- #5 RÜCKBILDUNGSGYMNASTIK -------------------------------------------- */
@@ -658,6 +682,7 @@ main{
 
 #rückbildungsgymnastik a{
     right: 30px;
+    transition: 1s ease;
 }
 
 .postNatalLeft, .postnatalRight{
@@ -705,21 +730,34 @@ main{
         width: 100vw;
     }
 }
+
+@media(max-width: 500px){
+
+    #rückbildungsgymnastik h1{
+        font-size: 1.8rem;
+    }
+
+    #rückbildungsgymnastik a{
+        right: -20px;
+        top: 20px;
+        
+    }
+}
 /* ------------------------------- #6 KONTAKT -------------------------------------------- */
 
 
 .contactWrapper{
-    height: 100vh;
-    width: 100vw;
   
+    width: 100vw;
 }
 
 .contactContainer{
-    height: 100%;
+    height: 110vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 0px 0px 10px;
 }
 
 .contactImg{
@@ -730,6 +768,9 @@ main{
     align-items: center;
     background-image: url('./pictures/babyHand.jpg');
     background-size: cover;
+    box-shadow: 0px 0px 5px grey;
+   
+ 
 }
 
 .contactElements{
@@ -761,6 +802,7 @@ main{
     height: 40%;
     justify-content: center;
     align-items: center;
+   
   
 }
 
@@ -769,20 +811,27 @@ main{
     height: 60%;
     display: flex;
     flex-direction: column;
+    
    
 }
+
 
 .kontaktformular div{
     display: flex;
     justify-content: center;
     align-items: center;
+  
    
 }
 
+
+
 .contactAboutPerson{
+
     height: 100px;
    
 }
+
 
 .contactAboutPerson div{
     /*border: 5px solid red;*/
@@ -829,6 +878,19 @@ main{
     border: 1px solid grey;
 }
 
+#submitMessage{
+   
+   font-size: 1.1rem;
+   padding: 3px;
+   background-color: transparent;
+   position: absolute;
+   bottom: 100px;
+    border: none;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    
+}
+
 
 
 
@@ -839,7 +901,7 @@ main{
 @media(max-width: 1200px){
     
     .contactWrapper{
-        height: 200vh;
+    
         transition: 1s ease;
     }
 
@@ -851,6 +913,12 @@ main{
 
     .contactContainer{
         flex-direction:column-reverse;
+        border: 10px solid cadetblue;
+        height: 200vh;
+    }
+
+    #submitMessage{
+        bottom: 780px;
     }
 }
 
@@ -868,6 +936,7 @@ main{
     .contactElements{
         /*border: 2px solid red;*/
         width: 100vw;
+        
     }
     
    
@@ -878,14 +947,43 @@ main{
         width: 200px;
         margin: 0px 10px;
     }
+
+    .kontaktformular{
+        
+    }
+
+    .contactAboutPerson{
+        height: 100px;
+       
+      
+    }
+
+    .kontaktformular input{
+       width: 130px;
+    } 
+
+
+    #submitMessage{
+        bottom: 630px;
+    }
 }
 
 
 @media (max-width: 500px){
 
+
+    .contactContainer{
+        height: 250vh;
+        border: 2px solid black;
+    }
+
     .contactLinks{
         flex-direction: column;
         transition: 1s ease;
+        border-bottom: 1px solid grey;
+        background-color: var(--bgColorLight);
+        border-top: 1px solid grey;
+        box-shadow: 0px 0px 5px grey;
     }
     .contactElement{
         height: 80px;
@@ -895,8 +993,36 @@ main{
 
     .contactImg{
         width: 100vw;
-        height: 90%;
+        height: 100%;
     }
+
+    .contactAboutPerson{
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .contactAboutPerson div{
+        margin: 0;
+        border: none;
+     }
+
+     .kontaktformular input{
+        width: 300px;
+        margin-bottom: 20px;
+     } 
+
+     
+     .contactMessage textarea{
+        border: none;
+        width: 350px;
+        border-bottom: 1px solid grey;
+    }
+
+
+    #submitMessage{
+        bottom: 410px;
+    }
+
 }
 
 
